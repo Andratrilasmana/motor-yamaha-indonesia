@@ -1,0 +1,157 @@
+<html>
+<head>
+<title> CSS Website Layout</title>
+<style>
+	body {
+		margin: 0;
+	}
+	/*Style the header*/
+	.header{
+		background-color: blue;
+		padding: 20px;
+		text-align: left;
+		color: white;
+		text-align: center;
+	}
+	header h1{
+		font-size: 50px;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		font-family: Arial;
+		padding:10px;
+		background: #f1f1f1;
+	}
+	.topnav{
+		overflow: hidden;
+		background-color: #333;
+	}
+	.topnav a{
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	.topnav a:hover {
+		background-color: ddd;
+		color: black;
+	}
+	.leftcolumn {
+		float:left;
+		width:75%;
+	}
+	.rightcolumn {
+		float:left;
+		width:25%;
+		background-color: #f1f1f1;
+		padding-left: 20px;
+	}
+	fakeimg {
+		background-color: #aaa;
+		width:100%;
+		padding:20px;
+	}
+	.card{
+		background-color: white;
+		padding:20px;
+		margin-top: 20px;
+	}
+	.row::after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	.footer{
+		padding:20px;
+		text-align: center;
+		background:#ddd;
+		margin-top: 20px;
+	}
+	@media screen and (max-width:800px){
+		.leftcolumn, .rightcolumn{
+			width:100%;
+			padding:0;
+		}
+	}
+	@media screen and (max-width:400px){
+		.topnav a{
+			float:none;
+			width:100%;
+		}
+	}
+</style>
+</head>
+	<body>
+		<div class="header">
+			<h1>Yamaha Motor</h1>
+			<p>Resize the browser window to see the effect.</p>
+		</div>
+		<div class="topnav">
+		<a href="home.html">HOME</a>
+		<a href="#">CONTACT</a>
+		<a href="#">ACCOUNT</a>
+		<a href="#"style="float:right">Link</a>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>Yamaha R15</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<img src="2.JFIF" style="height: 600px;width:100%;">
+				<p>Some text..</p>
+				<p>Yamaha R15 yang memiliki julukan Baby R6 ini hadir dengan tampilan desain yang lebih tajam, dan tegas yang diadaptasi dari motor seri R Yamaha yang dipakai di MotoGP. Mengadopsi DNA Yamaha R-Series yang Sporty, dengan lampu utama ganda yang tajam, bodi belakang runcing dan ramping, serta fairing aerodinamis yang kekar.
+Ditambah dengan speedometer digital multifungsi, lebih informatif dan mudah terlihat, dilengkapi juga dengan shift timing light memudahkan pengendara memperoleh performa optimal.
+Baca artikel detikoto, "Mengenal Yamaha All New R15 V3, Motor Pembangkit Jiwa untuk Balapan" selengkapnya https://oto.detik.com/motor/d-4656650/mengenal-yamaha-all-new-r15-v3-motor-pembangkit-jiwa-untuk-balapan.
+
+Download Apps Detikcom Sekarang https://apps.detik.com/detik/</p>
+			</div>
+			<div class="card">
+				<h2>Yamaha R6</h2>
+				<h5>Title description, Sep 2, 2017</h5>
+				<img src="3.JFIF" style="height: 600px;width:100%;">
+				<p>Some text..</p>
+				<p>Yamaha R6 memiliki tampilan desain yang sangat menawan dan sporty Torsi rendah yang dapat diatur, pada RPM rendah memungkinkan Anda berkendara saat hujan atau lalu lintas tanpa masalah Akselerasi mesin kencang Sudah dilengkapi dengan fitur canggih Sudah dilengkapi dengan sistem pengereman dobule discs.</p>
+			</div>
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<img src="OIP.JFIF" style="height: 600px;width:100%;">
+				<p>Some text..</p>
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectectur adipiscing elit, sed to eiusmod incdidunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamo.</p>
+			</div>
+			<div class="card">
+				<h2>TTILE HEADING</h2>
+				<h5>Title description, Sep 2, 2017</h5>
+					<img src="OIPp.JFIF" style="height: 600px;width:100%;">
+				<p>Some text..</p>
+				<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectectur adipiscing elit, sed to eiusmod incdidunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamo.</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>About Me</h2>
+				<img src="th.JFIF" style="height: 200px;width:100%;">
+				<p>PT Yamaha Indonesia Motor Manufacturing yang dikenal dengan PT YIMM, merupakan perusahaan perakitan kendaraan bermotor roda dua yang berdiri sejak tahun 1974. PT YIMM memiliki visi untuk menjadi perusahaan unggul yang terus bertumbuh berkelanjutan melalui inovasi berdasarkan pengalaman yang menyenangkan untuk menciptakan kesejahteraan dan memperkaya kehidupan masyarakat</p>
+			</div>
+			<div class="card">
+				<h3>Popular Post</h3>
+			<img src="5.jpg" style="height: 200px;width:100%;">
+				<img src="7.jpg" style="height: 200px;width:100%;">
+				<img src="9.png" style="height: 200px;width:100%;">
+				</div>
+				<div class="card">
+					<h3>Follow Me</h3>
+					<p>IG:@Yamaha Indonesia</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<h2>Copyright © 2023 Yamaha Indonesia Motor Mfg. All Rights Reserved</h2>
+		</div>
+	</body>
+	</html>
+
